@@ -1,0 +1,74 @@
+.nav {
+  background-color: none;
+  box-shadow: 0 0 10px none;
+  display: flex;
+  justify-content: center;
+}
+.nav__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 40em) {
+  .nav__container {
+    align-items: center;
+  }
+}
+.nav__list {
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+@media screen and (min-width: 40em) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+}
+.nav__item {
+  text-align: center;
+}
+.nav__link {
+  display: block;
+  text-decoration: none;
+  color: #fdcc52;
+  line-height: 1rem;
+  padding: 1rem;
+}
+.nav__link:hover {
+  background-color: none;
+  color: #efefef;
+}
+.nav__hamburger-checkbox {
+  display: none;
+}
+.nav__hamburger-checkbox:checked + .nav__list {
+  display: flex;
+}
+.nav__hamburger-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.75rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 40rem) {
+  .nav__hamburger-label {
+    display: none;
+  }
+}
+.nav__hamburger-line {
+  background: #fdcc52;
+  display: block;
+  height: 2px;
+  width: 1.5rem;
+}
+
+/*# sourceMappingURL=nav.css.map */

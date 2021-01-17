@@ -1,0 +1,82 @@
+@import "variables/variables";
+
+.nav {
+    background-color: $nav-background-color;
+    box-shadow: 0 0 10px $nav-shadow-color;
+    display:flex;
+    justify-content: center;
+    
+    &__container {
+        width: 100%;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;        //jobbra kerül a list és a checkbox
+        
+        @media screen and (min-width: 40em) {
+                align-items: center;            // 640px-től függőlegesen középen
+        }
+    }
+        
+    &__list {
+        display: none;            // Mobile first: alapból a lista (menüpontok) nem látszanak
+        flex-direction: column;                  //a menüpontok mobilon egymás alatt jelennek meg
+        margin: 0 auto;
+        padding: 0;
+        width:100%;
+        list-style: none;
+        
+        @media screen and (min-width: 40em) {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+    }
+    &__item {
+        text-align: center;
+    }
+    
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: $link-color;
+        line-height: 1rem;
+        padding: 1rem;
+        
+        &:hover {
+            background-color: $link-hover-background-color;
+            color: $link-hover-color;
+        }
+    }
+            
+    &__hamburger {
+
+        &-checkbox {
+            display:none;
+        
+            &:checked + .nav__list {               //a checkbox utáni ul formázása
+                display: flex;
+            }
+        }
+
+        &-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0.75rem;
+            flex-wrap: wrap;                        //a span-ok 3 sorba törjenek
+        
+            @media screen and (min-width: 40rem) {
+                    display: none;
+            }
+        }
+        &-line {
+            background: $link-color;
+            display: block;
+            height: 2px;
+            width: 1.5rem;
+        }
+    }
+}
+
