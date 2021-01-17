@@ -18,7 +18,7 @@
     padding: 7.5px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .container {
     padding: 9px;
   }
@@ -39,7 +39,7 @@
     padding: 15px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .container > [class^=col] {
     padding: 18px;
   }
@@ -237,76 +237,103 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-1 {
     width: 8.3333333333%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-2 {
     width: 16.6666666667%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-3 {
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-4 {
     width: 33.3333333333%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-5 {
     width: 41.6666666667%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-6 {
     width: 50%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-7 {
     width: 58.3333333333%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-8 {
     width: 66.6666666667%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-9 {
     width: 75%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-10 {
     width: 83.3333333333%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-11 {
     width: 91.6666666667%;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) {
   .col-lg-12 {
     width: 100%;
   }
 }
 
-/*# sourceMappingURL=grid.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background--header {
+  background: url("./../img/bg-pattern.png"), linear-gradient(to right, #dc2430, #7b4397);
+}
+
+.background--warning {
+  background-color: #fdcb4f;
+}
+
+.background--image {
+  background-image: url("./../img/bg-cta.jpg");
+  background-position: center;
+}
+
+.background--image-layer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.background--secondary {
+  background-color: #222;
+  color: #656565;
+}
+
+/*# sourceMappingURL=main.css.map */
