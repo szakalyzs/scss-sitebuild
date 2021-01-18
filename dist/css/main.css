@@ -406,6 +406,10 @@ hr {
   width: 100px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .background--header {
   background: url("./../img/bg-pattern.png"), linear-gradient(to right, #dc2430, #7b4397);
 }
@@ -430,7 +434,6 @@ hr {
 
 .link--custom {
   color: #fdcc52;
-  text-decoration: none;
 }
 .link--custom:hover {
   color: #efefef;
@@ -458,7 +461,6 @@ hr {
   margin: 30px auto;
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
-
 .btn-start:hover {
   background-color: #fdcc52;
   border: 1px solid #fdcb4f;
@@ -503,6 +505,11 @@ hr {
 }
 .btn--google:hover {
   background-color: #be3221;
+}
+
+.btn--padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

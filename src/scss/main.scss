@@ -32,6 +32,10 @@ hr {
     width: 100px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .background--header {
     background: url("./../img/bg-pattern.png"), linear-gradient(to right, rgb(220,36,48), rgb(123,67,151) ); 
 }
@@ -56,7 +60,6 @@ hr {
 
 .link--custom {
     color: $link-color;
-    text-decoration: none;
 
     &:hover{
         color: $link-hover-color;
@@ -84,13 +87,13 @@ hr {
     width: 250px;
     margin: 30px auto;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    &:hover {
+        background-color: #fdcc52;
+        border: 1px solid #fdcb4f;
+        cursor: pointer;
+    }
 }
 
-.btn-start:hover {
-    background-color: #fdcc52;
-    border: 1px solid #fdcb4f;
-    cursor: pointer;
-}
 
 .heart {
     color: #f00;
@@ -117,4 +120,9 @@ hr {
     @include btn-styled(twitter, $twitter);
     @include btn-styled(facebook, $facebook);
     @include btn-styled(google, $google);
+}
+
+.btn--padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
