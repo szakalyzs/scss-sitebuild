@@ -384,6 +384,10 @@
 
 /* @use 'colors';
 @use 'mixins'; */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -398,7 +402,7 @@ h1 {
   font-size: 3rem;
 }
 
-p {
+p, footer {
   font-family: "Muli", Arial, Helvetica, sans-serif;
 }
 
@@ -510,6 +514,26 @@ a {
 .btn--padding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.footer--menu {
+  list-style-type: none;
+  padding: 0rem;
+}
+.footer--menu-item {
+  display: inline-block;
+  padding: 0rem 0.5rem;
+}
+.footer--menu-link {
+  color: #656565;
+}
+.footer--menu-link:hover {
+  color: #fdcc52;
+}
+
+.menu--fixed {
+  position: sticky;
+  top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
